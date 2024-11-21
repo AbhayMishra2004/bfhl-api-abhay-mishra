@@ -11,7 +11,6 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const parsedJson = JSON.parse(jsonInput);
       const response = await fetch(`${API_URL}/bfhl`, {
         method: 'POST',
         headers: {
